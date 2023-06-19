@@ -1,38 +1,315 @@
 .App {
   text-align: center;
+  position: relative;
+  /* width: 1920px; */
+  height: 100vh;
+  background: #06051A;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login {
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  left: -60px;
+  top: 180px;
+  background-image: url('./Images/Log\ in\ -\ left\ image.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.App .screen {
+  /* width: 2202px; */
+  /* position: absolute;
+  left: -34%;
+  right: -40%;
+  top: 0;
+  bottom: 0; */
+  /* background: linear-gradient(303.01deg, #5961F8 -4.4%, #F2D9F7 111.29%); */
+  /* mix-blend-mode: color; */
+  /* opacity: 0; */
+}
+
+.login-sub {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 8.76px;
+
+  position: absolute;
+  width: 160px;
+  height: 43px;
+  left: 237px;
+  top: -65px;
+  backdrop-filter: blur(57.6829px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 59.3536px;
+}
+
+.login-sub p {
+  position: absolute;
+  width: 400px;
+  height: 56px;
+  left: 0;
+  top: 17px;
+  text-align: start;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 180%;
+  letter-spacing: 0.05em;
+  background: linear-gradient(303.01deg, #5961F8 -4.4%, #F2D9F7 111.29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+}
+
+.login-form,
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  gap: 10px;
+  position: absolute;
+  width: 444px;
+  height: 85%;
+  right: -57%;
+  top: 0;
+
+  background: radial-gradient(145.46% 122.03% at 88.28% 10.25%, rgba(222, 164, 242, 0.1) 0%, rgba(0, 0, 0, 0) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , radial-gradient(93.02% 80.9% at 22.44% 86.73%, rgba(110, 111, 248, 0.1) 0%, rgba(110, 111, 248, 0) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , linear-gradient(131.02deg, rgba(104, 108, 248, 0.059) 10.34%, rgba(236, 171, 241, 0.059) 90.18%), #060519;
+  border-radius: 20px;
+}
+
+.heading {
+  width: 160px;
+  height: 43px;
+  font-size: 35px;
+  top: -50px;
+  left: -31px;
+  text-transform: none;
+  position: absolute;
+  background-image: linear-gradient(303.01deg, #5961F8 -4.4%, #F2D9F7 111.29%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.heading2 {
+  width: 100%;
+  height: 48px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  text-align: center;
+  color: #C8D8FF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.signup-span {
+  display: block;
+  width: 100%;
+  height: 19px;
+
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #5C6D8E;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px;
+  gap: 30px;
+  width: 480px;
+  height: 170px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0px 10px;
+  gap: 20px;
+  width: 100%;
+  height: 90px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.form {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+}
+
+.from-span {
+  width: 90%;
+  height: 16px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #96ABDE;
+}
+
+.social-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-left: 20%;
+  gap: 20px;
+  width: 480px;
+  height: 54px;
+
+}
+
+.signup-screen {
+  position: relative;
+
+}
+
+.bg-signup {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: url('./Images/Sign\ up\ background.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  position: absolute;
+  width: 25%;
+  height: 70%;
+  left: 38%;
+  top: 15%;
+
+  background: radial-gradient(168.07% 71.98% at 103.33% -4.84%, rgba(222, 164, 242, 0.1) 0%, rgba(0, 0, 0, 0) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , radial-gradient(93.02% 80.9% at 22.44% 86.73%, rgba(110, 111, 248, 0.1) 0%, rgba(110, 111, 248, 0) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , linear-gradient(131.02deg, rgba(104, 108, 248, 0.059) 10.34%, rgba(236, 171, 241, 0.059) 90.18%), #060519;
+  border-radius: 20px;
+}
+
+.head-signup {
+  width: 100%;
+  height: 48px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 48px;
+  text-align: center;
+  color: #C8D8FF;
+}
+
+.container {
+  width: 90%;
+  height: 85%;
+  right: 0;
+  left: 0;
+  top: 10%;
+  margin: 0 auto;
+}
+
+.store-div {
+  padding: 15px 0px;
+  gap: 49px;
+  width: 611px;
+  height: 699px;
+}
+
+.store-head {
+  /* display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  padding: 52px 40px; */
+  /* gap: 50px; */
+  /* position: absolute; */
+  /* width: 1658px; */
+  /* height: 803px; */
+  /* left: 125px;
+  top: 138px; */
+
 }
 
-.App-link {
-  color: #61dafb;
+.store-div article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 611px;
+  height: 105px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.store-div article p {
+  width: 315px;
+  height: 50px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 180%;
+  letter-spacing: 0.02em
 }
