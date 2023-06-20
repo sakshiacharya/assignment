@@ -1,16 +1,36 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Box, TextField, Button } from '@mui/material';
 import MuiPhoneNumber from 'material-ui-phone-number';
+import { useDispatch, useSelector } from 'react-redux';
+import { login } from '../Redux/actions/login';
+import {Link, Navigate} from 'react-router-dom' 
 export const Loginscreen = () => {
-
     const [mobileNumber, setMobileNumber] = useState('');
+    const dispatch = useDispatch()
+
+
+    const LoginWithNumber = () => {
+        dispatch(login(mobileNumber))
+    }
+
+
+
+    const isLogin = useSelector((state) => state)
+    console.log('isLogin', isLogin.loginReducers.mobileNumber.mobileNumber)
+
+    
     function handleOnChange(value) {
-        this.setState({
-            phone: value
-        });
-    } const handleMobileNumberChange = (event) => {
-        setMobileNumber(event.target.value);
-    };
+
+        setMobileNumber(value)
+
+    } 
+
+    if(localStorage.getItem('MobileNumber')) {
+
+        window.location.replace('/name-store')
+        
+        
+    }
 
     return (
         <React.Fragment>
@@ -25,7 +45,7 @@ export const Loginscreen = () => {
                     <article className='form'>
                         <div className='heading2'>Get Started ! </div>
                         <div className='signup-span'>New to Company?
-                            <a href='signup'> Sign up </a>
+                            <Link to='/signup'> Sign up </Link>
 
                             <div className='form-container' >
                                 <section className='frame'>
@@ -41,12 +61,12 @@ export const Loginscreen = () => {
                                         autoComplete="off"
                                     >
                                         <div >
-                                            <MuiPhoneNumber label="Enter Mobile Number" variant="outlined" defaultCountry={'in'} id="outlined-size-small" />
+                                            <MuiPhoneNumber label="Enter Mobile Number" variant="outlined" onChange={handleOnChange} defaultCountry={'in'} id="outlined-size-small" />
  
                                         </div>
 
                                         <Button style={{ marginTop: '20px', width: '70%', background: 'linear-gradient(165.69deg, rgba(104, 108, 248, 0.7) 4.49%, rgba(236, 171, 241, 0.7) 113.71%)', borderRadius: '5px' }}
-                                            variant="contained" size="large" >Get OTP</Button>
+                                            variant="contained" size="large" onClick={() => LoginWithNumber()} >Get OTP</Button>
                                     </Box>
                                     <span className='from-span'> Or sign in with </span>
                                     <div className='social-btn'>

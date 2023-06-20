@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, TextField, Button } from '@mui/material';
 import MuiPhoneNumber from 'material-ui-phone-number';
+import { Link } from 'react-router-dom';
 
 export const SignupScreen = () => {
     return (
@@ -11,7 +12,7 @@ export const SignupScreen = () => {
                         <article className='form'>
                             <div className='head-signup'>Signup in 10 Mins </div>
                             <div className='signup-span'>Already have a account?
-                                <b> Sign in </b>
+                                <Link to='/'> Sign in </Link>
                             </div>
 
                             <div className='signup-container'>

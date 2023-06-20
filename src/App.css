@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .App {
   text-align: center;
   position: relative;
@@ -272,8 +274,8 @@ body {
 .store-div {
   padding: 15px 0px;
   gap: 49px;
-  width: 611px;
-  height: 699px;
+  /* width: 611px;
+  height: 699px; */
 }
 
 .store-head {
@@ -288,7 +290,9 @@ body {
   /* height: 803px; */
   /* left: 125px;
   top: 138px; */
-
+  background-image: linear-gradient(303.01deg, #5961F8 -4.4%, #F2D9F7 111.29%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .store-div article {
@@ -297,10 +301,10 @@ body {
   align-items: flex-start;
   padding: 0px;
   position: absolute;
-  top: 30%;
-  left: 10%;
-
+  top: 20%;
+  left: 5%;
   height: 105px;
+  width: 35%;
 }
 
 .store-div article p {
@@ -315,24 +319,30 @@ body {
   text-align: left;
 }
 
+.store-div article .span {
+  font-size: 12px;
+  text-align: end;
+  padding-top: 10px;
+}
+
 .store-div2 {
-  width: 820px;
-  height: 699px;
-  padding: 60px;
+  position: absolute;
+  right: 0;
+  width: 56%;
 }
 
 .border-box {
   display: block;
-  /* width: 500px; */
-  /* height: 500px; */
+  height: 500px;
   padding: 50px;
+  margin: 20px;
   border: 1px solid #5C6D8E;
   border-radius: 10px;
 }
 
 .store-name {
   /* width: 100px; */
-  height: 12px; 
+  height: 12px;
   font-family: 'SF Pro Text';
   font-style: normal;
   font-weight: 600;
@@ -345,13 +355,278 @@ body {
 
 }
 
-.store-name a{
+.store-name a {
   font-weight: normal;
   font-size: 12px;
   padding: 10px;
 }
 
-.category{
+.cat-div {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.category {
   font-family: 'SF Pro Text';
   font-size: 14px;
+}
+
+.cat-div p {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #C8D8FF;
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 49px;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 35%;
+
+}
+
+.superhead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+.super-head {
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.earth-pic {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-image: url('./Images/Industry\ image.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+.market-logo {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: none;
+  background-image: linear-gradient(303.01deg, #5961F8 -4.4%, #F2D9F7 111.29%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding-top: 30px;
+}
+
+.main-Market-Container {
+  background: radial-gradient(145.46% 122.03% at 88.28% 10.25%, rgba(222, 164, 242, 0.1) 0%, rgba(0, 0, 0, 0) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , radial-gradient(93.02% 80.9% at 22.44% 86.73%, rgba(110, 111, 248, 0.1) 0%, rgba(110, 111, 248, 0) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , linear-gradient(131.02deg, rgba(104, 108, 248, 0.059) 10.34%, rgba(236, 171, 241, 0.059) 90.18%), #060519;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: rgba(255, 255, 255, 0.05) 0px 0px 0px 1px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.indusinfo {
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+  width: 40%;
+}
+
+.pageNumber {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: left;
+}
+
+.currectpage {
+
+  font-family: 'Poppins', sans-serif;
+  text-transform: none;
+  background-image: linear-gradient(303.01deg, #5961F8 -4.4%, #F2D9F7 111.29%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+}
+
+.primaryMarket {
+  text-transform: none;
+  background-image: linear-gradient(303.01deg, #5961F8 -4.4%, #F2D9F7 111.29%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex: none;
+  order: 0;
+  font-size: 32px;
+  flex-grow: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+.primarymrktDesc {
+  text-transform: none;
+  background-image: linear-gradient(303.01deg, #5961F8 -4.4%, #F2D9F7 111.29%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex: none;
+  order: 0;
+  font-size: 12px;
+  flex-grow: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+.finalpage {
+  color: #343075;
+}
+
+
+.indusimg {
+  width: 40%;
+}
+
+.indusimg img {
+  width: 100%;
+}
+
+.coutry-select {
+  margin-top: 16px;
+  color: white;
+}
+
+.select {
+  color: white;
+  border: none;
+}
+
+.navbuttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.createstorebtn button {
+  background-image: linear-gradient(to top, #bd87ae 0, #74a6fd 51%);
+  padding: 10px;
+  border-radius: 6px;
+  color: white;
+  border: none;
+}
+
+.copyright-compname {
+  text-transform: none;
+  background-image: linear-gradient(303.01deg, #5961F8 -4.4%, #F2D9F7 111.29%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex: none;
+  order: 0;
+
+  flex-grow: 0;
+}
+
+.backbutton img {
+  width: 36px;
+  color: #343075;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-family: 'poppins', sans-serif;
+  font-size: 12px;
+  color: #333364;
+}
+
+.loading-section {
+  display: block;
+}
+
+.loading-section img {
+  padding-top: 10%;
+}
+
+.fetching {
+  right: 0;
+  top: 60%;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.fetch-other {
+  position: absolute;
+  width: 50%;
+  /* height: 200px; */
+  left: 25%;
+  bottom: 15%;
+  right: 0;
+  color: #5C6D8E;
+}
+
+.fetch-other p {
+  width: 50%;
+  height: 19px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  left: 25%;
+  letter-spacing: 0.03rem;
+  font-size: 12px;
+}
+
+.copy {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  right: 0;
+}
+
+.css-l4u8b9-MuiInputBase-root-MuiInput-root:before, .css-q0jhri-MuiInputBase-root-MuiInput-root:before{
+  border-bottom: 1px solid #5C6D8E !important;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input, .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root, .css-1dmqq7i-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input, 
+.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root, .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input, .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root, .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
+  color: #5C6D8E !important;
+}
+
+.css-10bey84-MuiSvgIcon-root-MuiNativeSelect-icon, .css-i4bv87-MuiSvgIcon-root{
+  fill: #fff !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+  border-color: #5C6D8E !important;
 }
