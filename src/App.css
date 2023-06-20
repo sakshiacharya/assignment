@@ -266,6 +266,7 @@ body {
   left: 0;
   top: 10%;
   margin: 0 auto;
+  flex-direction: row;
 }
 
 .store-div {
@@ -295,11 +296,10 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 10px;
   position: absolute;
   top: 30%;
   left: 10%;
-  width: 611px;
+
   height: 105px;
 }
 
@@ -311,5 +311,47 @@ body {
   font-weight: 400;
   font-size: 11px;
   line-height: 180%;
-  letter-spacing: 0.02em
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.store-div2 {
+  width: 820px;
+  height: 699px;
+  padding: 60px;
+}
+
+.border-box {
+  display: block;
+  /* width: 500px; */
+  /* height: 500px; */
+  padding: 50px;
+  border: 1px solid #5C6D8E;
+  border-radius: 10px;
+}
+
+.store-name {
+  /* width: 100px; */
+  height: 12px; 
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17.3795px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #C8D8FF;
+
+}
+
+.store-name a{
+  font-weight: normal;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.category{
+  font-family: 'SF Pro Text';
+  font-size: 14px;
 }
